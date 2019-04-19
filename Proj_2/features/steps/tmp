@@ -1,0 +1,89 @@
+@given("user types in quantity from range <-infinity, 0>")
+def step_impl(context):
+    pass
+
+@then("MacBook is not added to user's shopping cart")
+def step_impl(context):
+    pass
+
+@given("wish list contains MacBook")
+def step_impl(context):
+    pass
+
+@when("user clicks on \"Update\" button")
+def step_impl(context):
+    pass
+
+@given("user clicks on \"Cart\" button")
+def step_impl(context):
+    pass
+
+@then("MacBook is displayed")
+def step_impl(context):
+    pass
+
+@given("user types in quantity that is non-integer number")
+def step_impl(context):
+    pass
+
+@given("user is logged in")
+def step_impl(context):
+    pass
+
+@given("user is looking at their wish list")
+def step_impl(context):
+    pass
+
+@when("user clicks on \"Remove\" button")
+def step_impl(context):
+    pass
+
+@given("MacBook is in the cart")
+def step_impl(context):
+    pass
+
+@then("MacBook has quantity \"4\"")
+def step_impl(context):
+    pass
+
+@given("user types in \"4\" in quantity")
+def step_impl(context):
+    pass
+
+@when("user clicks on \"Cart\" button")
+def step_impl(context):
+    pass
+
+@then("MacBook is removed from the user\'s shopping cart")
+def step_impl(context):
+    pass
+
+@given("user is looking at the shopping cart")
+def step_impl(context):
+    pass
+
+### CHECKOUT TESTS
+
+@given("user is not logged in")
+def step_impl(context):
+    pass
+
+@when("user clicks on \"Checkout\" button")
+def step_impl(context):
+    pass
+
+@given("online shop is selling MacBook")
+def step_impl(context):
+    pass
+
+@then("checkout start at step 2")
+def step_impl(context):
+    pass
+
+@then("checkout start at step 1")
+def step_impl(context):
+    pass
+
+@given("user is looking at the step 1 page")
+def step_impl(context):
+    pass
