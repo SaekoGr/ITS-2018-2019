@@ -16,17 +16,18 @@ Feature: Browse
         Given user is looking at the online shop page
         When user clicks on "Components" button
         Then list of products is shown:
-            | product |
-            | Mice and Trackballs (0)|
-            | Monitors (2)|
-            | Printers (0)|
-            | Scanners (0)|
-            | Web Cameras (0)|
+            | category |
+            | Mice and Trackballs (0) |
+            | Monitors (2) |
+            | Printers (0) |
+            | Printers (0) |
+            | Web Cameras (0) |
 
     Scenario: Show products list
         Given user is looking at the online shop page
         When user clicks on "Phones & PDAs"
         Then products are displayed:
+            | product |
             | HTC Touch HD |
             | iPhone |
             | Palm Treo Pro |
