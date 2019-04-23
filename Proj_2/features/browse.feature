@@ -1,6 +1,8 @@
 Feature: Browse
-    Background: the shops sells MacBook
+    Background: 
+        Given the shops sells MacBook
 
+    @clear_wish_list @log_out
     Scenario Outline: Add item to Wish List
         Given user is looking at <page>
         And user is logged in
