@@ -25,7 +25,7 @@ Feature: Cart
         When user clicks on "Add to cart" button
         Then MacBook is not added to user's shopping cart
     
-    @clear_cart @clear_wish_list @log_out
+    @clear_wish_list @clear_cart @log_out
     Scenario: Add item from wish list to cart
         Given user is logged in
         And wish list contains MacBook

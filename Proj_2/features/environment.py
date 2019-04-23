@@ -11,6 +11,17 @@ def before_all(context):
     context.is_logged_in = False
     context.is_in_cart = False
 
+def after_tag(context, tag):
+    if tag.startswith("clear_wish_list"):
+        context.browser.get("http://mys01.fit.vutbr.cz:8012/index.php?route=account/wishlist")
+        context.browser.find_element_by_xpath("//td[6]/a/i").click()
+    if tag.startswith("clear_cart"):
+        context.browser.get("http://mys01.fit.vutbr.cz:8012/index.php?route=checkout/cart")
+        context.browser.find_element_by_xpath("//div[@id='content']/form/div/table/tbody/tr/td[4]/div/span/button[2]/i").click()
+    if tag.startswith("log_out"):
+        context.browser.find_element_by_xpath("//div[@id='top-links']/ul/li[2]/a").click()
+        context.browser.find_element_by_xpath("//div[@id='top-links']/ul/li[2]/ul/li[5]/a").click()
+
 
 def after_all(context):  
     context.browser.quit() 
