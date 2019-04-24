@@ -12,7 +12,7 @@ class WebDriverFirefox(unittest.TestCase):
         self.driver = webdriver.Remote(
                 command_executor='http://mys01.fit.vutbr.cz:4444/wd/hub',
                 desired_capabilities=dp)
-        self.driver.implicitly_wait(5)
+        self.driver.implicitly_wait(15)
         self.base_url = "http://mys01.fit.vutbr.cz:8012/"
         self.verificationErrors = []
         self.accept_next_alert = True
